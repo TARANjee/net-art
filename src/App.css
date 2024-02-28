@@ -1,38 +1,157 @@
-.App {
+.app-container {
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(white, #f8f6ac);
+}
+
+/* header */
+
+.App-header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.logo {
+  width: 35%;
+}
+
+/* Award */
+
+.award-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+}
+
+.trophy {
+  width: 35%;
+}
+
+.award-info {
+  width: 65%;
+
+}
+
+h4,
+p {
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 17px;
+}
+
+.font {
+  font-size: 16px;
+}
+
+.awardimage {
+  width: 100%;
+  background-size: cover;
+}
+
+.timage {
+  width: 100%;
+  height: 100%;
+}
+
+/* products */
+
+.text-center {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.mb {
+
+  border-bottom: 2px solid #e03c39;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.motor-image {
+  margin-left: 10%;
+  margin-right: 10%;
+  width: 80%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+
+/* footer */
+
+.App-footer {
+  background-color: #e03c39;
+  width: 100%;
+  padding-top: 15px;
+  padding-bottom: 15px;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-around;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.link {
+  color: white;
+  display: flex;
+  text-decoration: none;
+  justify-content: center;
+  align-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.link-text {
+  padding-left: 5px;
+}
+
+q {
+  font-weight: bold;
+}
+
+span {
+  color: #e03c39;
+}
+
+@media screen and (max-width: 800px) {
+
+
+  .logo {
+    width: 70%;
+
   }
-  to {
-    transform: rotate(360deg);
+
+  .award-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .trophy {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .award-info {
+    width: 100%;
+    height: 100%;
+  }
+
+  .motor-image {
+    width: 95%;
+  }
+
+  .App-footer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  p {
+
+    font-size: 15px;
   }
 }
