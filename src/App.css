@@ -154,4 +154,8 @@ span {
 
     font-size: 15px;
   }
+    .timage {
+      width: 70%;
+      height: 70%;
+    }
 }
